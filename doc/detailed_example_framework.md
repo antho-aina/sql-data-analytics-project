@@ -55,27 +55,27 @@ Questions to ask:
 ## 📈 Advance Analytics
 
 ### 07. Change-Over-Time (Trends)  
-**Purpose**: Analyzing how metrics evolve over time.
+**Purpose**: Identify trends and patterns in performance over time.
 
 Questions to ask:
 - Are measures trending upward, downward, or cyclical?
 - Are trends consistent across dimensions?
 
 ### 08. Cumulative Analysis  
-**Purpose**: Aggregating data to understand total impact or progression.
+**Purpose**: Track how values build up over time to understand overall progress.
 
 Questions to ask:
-- What is the cumulative growth of measures?
-- How do totals compare across categories?
-- Where does growth accelerate or slow?
+- How do totals grow over time?
+- Which dimensions contribute most to the total?
+- When does growth speed up or slow down?
 
 ### 09. Performance Analysis  
 **Purpose**: Identify the factors that drive performance differences.
 
 Questions to ask:
-- How do measures compare against benchmarks?
-- Which dimensions show strong vs. weak performance?
-- What drivers explain differences?
+- Are results better or worse than targets or expectations?
+- Which products, customers, or regions perform best and worst?
+- What factors explain these performance differences?
 
 ### 10. Part-to-Whole (Proportional)  
 **Purpose**: Understanding how components contribute to a whole.
@@ -89,14 +89,13 @@ Questions to ask:
 **Purpose**: Dividing data into meaningful groups for targeted analysis.
 
 Questions to ask:
-- How can dimensions be grouped meaningfully?
+- How can dimensions be grouped meaningfully? (New vs returning customers, High-value vs low-value products ...)
 - Do segments show distinct measure patterns?
-- Which segments are most valuable or risky?
+- Which segments are most valuable, most at risk, or require attention?
 
 ### 12. Reporting
-**Purpose**: Communicating findings through dashboards, summaries, and visualizations.
+**Purpose**: Report consolidates key customer metrics and behaviors.
 
 Questions to ask:
-- Which measures and dimensions matter most to stakeholders?
-- What visualizations best highlight insights?
-- How can results be communicated clearly and effectively?
+- What should stakeholders care about?
+- What action should be taken?
