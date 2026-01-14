@@ -3,11 +3,9 @@
 Measure Exploration
 ===============================================================================
 Purpose:
-    - Reviewing measures (numerical data) and key metrics..
+    - Analyze high-level business metrics to get a quick overview of overall performance.
 	
 SQL Functions Used:
-    - MIN()
-    - MAX()
     - AVG()
     - SUM()
     - COUNT()
@@ -15,12 +13,7 @@ SQL Functions Used:
 ===============================================================================
 */
 
--- What are the min, max, mean, and median values?
-
-SELECT 
-    MIN(price) AS minimum_product_price,
-    MAX(price) AS maximum_product_price
-FROM gold.fact_sales
+-- What are the mean and total values of measures? (sales , orders , ...)
 
 SELECT AVG(sales_amount) AS average_sale
 FROM gold.fact_sales;
