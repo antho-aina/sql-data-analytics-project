@@ -27,28 +27,27 @@ Questions to ask:
 
 Questions to ask:
 - What is the time range of the dataset?
+- Is data continuous or missing periods?
 
-### 04. Measures Exploration (Big Numbers)  
-**Purpose**: Reviewing key metrics and numerical summaries.
+### 04. Measures Exploration (Big Picture)  
+**Purpose**: Analyze high-level business metrics to get a quick overview of overall performance.
 
 Questions to ask:
-- What are the min, max, mean, and median values?
-- Which measures are most critical for decisions?
+- What are the mean and total values of measures? (sales , orders , ...)
 - Are there anomalies or extreme values?
 
 ### 05. Magnitude  
-**Purpose**: Assessing the scale and impact of different measures.
+**Purpose**: See how performance differs by dimensions.
 
 Questions to ask:
-- Which measures have the largest impact?
 - How do measures vary across dimensions?
-- How do measures compare across different time periods?
+- Which values are unusually high or low?
 
 ### 06. Ranking (Top N – Bottom N)  
 **Purpose**: Identifying highest and lowest performing entities.
 
 Questions to ask:
-- Which dimension members rank highest in measures?
+- Which dimension (regions / country) members rank highest in measures?
 - Which consistently underperform?
 
 --- 
@@ -71,7 +70,7 @@ Questions to ask:
 - Where does growth accelerate or slow?
 
 ### 09. Performance Analysis  
-**Purpose**: Evaluating efficiency, effectiveness, and outcomes.
+**Purpose**: Identify the factors that drive performance differences.
 
 Questions to ask:
 - How do measures compare against benchmarks?
@@ -82,9 +81,9 @@ Questions to ask:
 **Purpose**: Understanding how components contribute to a whole.
 
 Questions to ask:
-- What percentage does each dimension contribute?
-- Are contributions stable or shifting?
-- Which segments dominate the whole?
+- What percentage does each dimension contribute? (ex : products)
+- Are the top contributors staying the same over time?
+- Which groups contribute the biggest share of the total?
 
 ### 11. Data Segmentation  
 **Purpose**: Dividing data into meaningful groups for targeted analysis.
