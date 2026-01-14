@@ -1,0 +1,22 @@
+/*
+===============================================================================
+Date Exploration
+===============================================================================
+Purpose:
+    - Understand the range of historical data.
+	
+SQL Functions Used:
+    - MIN()
+    - MAX()
+    - DATEDIFF()
+
+===============================================================================
+*/
+
+-- What is the time range of the dataset?
+
+SELECT 
+    MIN(order_date) AS first_order_date,
+    MAX(order_date) AS last_order_date,
+    DATEDIFF(MONTH, MIN(order_date), MAX(order_date)) AS order_range_month
+FROM gold.fact_sales;
