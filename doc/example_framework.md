@@ -11,17 +11,17 @@ EDA focuses on understanding the structure, patterns, and relationships within a
 1. **Database Exploration**: Investigating the structure, tables, and relationships within the database.
 2. **Dimensions Exploration**: Explore the structure of dimension tables.
 3. **Date Range Exploration**: Understand the range of historical data.
-4. **Measures Exploration (Big Numbers)**: Reviewing measures (numerical data) and key metrics.
-5. **Magnitude**: Assessing the scale and impact of different measures.
+4. **Measures Exploration (Big Picture)**: Analyze high-level business metrics to get a quick overview of overall performance.
+5. **Magnitude**: See how performance differs by dimensions.
 6. **Ranking (Top N - Bottom N)**: Identifying highest and lowest performing entities.
 
 ---
 
 ## 📈 Advance Analytics
 
-7. **Change-Over-Time (Trends)**: Analyzing how metrics evolve over time.
-8. **Cumulative Analysis**: Aggregating data to understand total impact or progression.
-9. **Performance Analysis**: Evaluating efficiency, effectiveness, and outcomes.
+7. **Change-Over-Time (Trends)**: Identify trends and patterns in performance over time.
+8. **Cumulative Analysis**: Track how values build up over time to understand overall progress.
+9. **Performance Analysis**: Identify the factors that drive performance differences.
 10. **Part-to-Whole (Proportional)**: Understanding how components contribute to a whole.
 11. **Data Segmentation**: Dividing data into meaningful groups for targeted analysis.
-12. **Reporting**: Communicating findings through dashboards, summaries, and visualizations.
+12. **Reporting**: Report consolidates key customer metrics and behaviors.
