@@ -22,7 +22,7 @@ Questions to ask:
 - Do hierarchies exist (e.g., Country → Region → City)?
 - Are there surrogate keys or natural keys for dimensions?
 
-### 03. Date Exploration  
+### 03. Date Range Exploration  
 **Purpose**: Understand the range of historical data.
 
 Questions to ask:
