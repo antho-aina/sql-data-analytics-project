@@ -10,7 +10,7 @@ EDA focuses on understanding the structure, patterns, and relationships within a
 
 1. **Database Exploration**: Investigating the structure, tables, and relationships within the database.
 2. **Dimensions Exploration**: Explore the structure of dimension tables.
-3. **Date Exploration**: Understand the range of historical data.
+3. **Date Range Exploration**: Understand the range of historical data.
 4. **Measures Exploration (Big Numbers)**: Reviewing measures (numerical data) and key metrics.
 5. **Magnitude**: Assessing the scale and impact of different measures.
 6. **Ranking (Top N - Bottom N)**: Identifying highest and lowest performing entities.
