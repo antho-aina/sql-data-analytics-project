@@ -15,12 +15,10 @@ Questions to ask:
 - How are tables related (keys, joins, constraints)?
 
 ### 02. Dimensions Exploration  
-**Purpose**: Analyzing categorical variables to understand distribution and grouping.
+**Purpose**: Explore the structure of dimension tables.
 
 Questions to ask:
 - What dimensions exist (e.g., region, product, customer)?
-- Are values evenly distributed or skewed?
-- Which dimension members dominate or are rare?
 - Do hierarchies exist (e.g., Country → Region → City)?
 - Are there surrogate keys or natural keys for dimensions?
 
