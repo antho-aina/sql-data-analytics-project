@@ -11,9 +11,6 @@ SQL Functions Used:
 ===============================================================================
 */
 
-SELECT * FROM gold.dim_customers;
-SELECT * FROM gold.dim_products;
-
 -- What dimensions exist ?
 
 SELECT DISTINCT country
