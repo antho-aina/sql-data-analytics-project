@@ -9,7 +9,7 @@ This document outlines the key components of Data Analytics, structured into two
 EDA focuses on understanding the structure, patterns, and relationships within a dataset. It is typically the first step in any data analysis process.
 
 1. **Database Exploration**: Investigating the structure, tables, and relationships within the database.
-2. **Dimensions Exploration**: Analyzing dimensions (categorical data) to understand distribution and grouping.
+2. **Dimensions Exploration**: Explore the structure of dimension tables.
 3. **Date Exploration**: Understand the range of historical data.
 4. **Measures Exploration (Big Numbers)**: Reviewing measures (numerical data) and key metrics.
 5. **Magnitude**: Assessing the scale and impact of different measures.
