@@ -32,10 +32,6 @@ INNER JOIN sys.index_columns ic ON i.object_id = ic.object_id AND i.index_id = i
 WHERE t.name = 'gold.dim_customers' AND i.is_primary_key = 1
 ORDER BY ic.key_ordinal;
 
-SELECT * FROM sys.tables;
-SELECT * FROM sys.indexes;
-SELECT * FROM sys.index_columns;
-
 --Which columns contain measure vs dimension data ?
 SELECT 
    TABLE_NAME,
