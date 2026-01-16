@@ -23,7 +23,7 @@ The framework is divided into **2 phases** and **9 steps**, each answering **one
 
 **Goal**: Ensure the data makes sense before analyzing performance.
 
-### 01. Data Overview (Structure & Grain)
+### 01. Understanding the Data Structure
 
 **Purpose**: Understand what data exists and what one row represents.
 
