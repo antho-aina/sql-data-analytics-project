@@ -1,101 +1,148 @@
-# Data Analytics Framework
-This document outlines the key components of Data Analytics, structured into two primary categories: Exploratory Data Analysis (EDA) and Advance Analytics. Each category encompasses specific analytical techniques that help uncover insights and support decision-making.
+# 📊 Beginner-Friendly Data Analytics Framework
+
+> **Project scope notice**
+> The dataset used in this project has **already been cleaned, normalized, and quality-checked** in a separate repository.
+>
+> ✔ No missing-value treatment required
+> ✔ No deduplication required
+> ✔ No normalization or standardization required
+> ✔ Data types, keys, and integrity checks already validated
+>
+> 👉 This repository focuses **only on analysis, insight generation, and reporting**.
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
-EDA focuses on understanding the structure, patterns, and relationships within a dataset. It is typically the first step in any data analysis process.
+## 🎯 Purpose
 
-### 01. Database Exploration  
-**Purpose**: Investigating the structure, tables, and relationships within the database.
+This framework provides a **clear, beginner-friendly workflow** for data analysis. It removes redundancy, avoids advanced concepts too early, and guides users from raw understanding to **actionable insights**.
 
-Questions to ask:
-- What tables and schemas exist?
-- Which columns are dimensions (categorical) and which are measures (numerical)?
-- How are tables related (keys, joins, constraints)?
+The framework is divided into **2 phases** and **9 steps**, each answering **one simple analytical question**.
 
-### 02. Dimensions Exploration  
-**Purpose**: Explore the structure of dimension tables.
+---
 
-Questions to ask:
-- What dimensions exist (e.g., region, product, customer)?
-- Do hierarchies exist (e.g., Country → Region → City)?
-- Are there surrogate keys or natural keys for dimensions?
+## 🔍 Phase 1: Understand & Trust the Data (EDA)
 
-### 03. Date Range Exploration  
-**Purpose**: Understand the range of historical data.
+**Goal**: Ensure the data makes sense before analyzing performance.
 
-Questions to ask:
-- What is the time range of the dataset?
-- Is data continuous or missing periods?
+### 01. Data Overview (Structure & Grain)
 
-### 04. Measures Exploration (Big Picture)  
-**Purpose**: Analyze high-level business metrics to get a quick overview of overall performance.
+**Purpose**: Understand what data exists and what one row represents.
 
-Questions to ask:
-- What are the mean and total values of measures? (sales , orders , ...)
-- Are there anomalies or extreme values?
+**Questions to ask**:
 
-### 05. Magnitude  
-**Purpose**: See how performance differs by dimensions.
+* What tables exist?
+* Which table contains the main business event (sales, orders, transactions)?
+* What does one row represent?
+* Which columns are dimensions (categories)?
+* Which columns are measures (numbers)?
 
-Questions to ask:
-- How do measures vary across dimensions?
-- Which values are unusually high or low?
+---
 
-### 06. Ranking (Top N – Bottom N)  
-**Purpose**: Identifying highest and lowest performing entities.
+### 02. Dimensions Check (Categories)
 
-Questions to ask:
-- Which dimension (regions / country) members rank highest in measures?
-- Which consistently underperform?
+**Purpose**: Ensure categories are usable for grouping and comparison.
 
---- 
+**Questions to ask**:
 
-## 📈 Advance Analytics
+* What are the main categories (product, customer, region)?
+* How many unique values does each category have?
+* Are there missing or unclear values?
+* Are labels consistent and readable?
 
-### 07. Change-Over-Time (Trends)  
-**Purpose**: Identify trends and patterns in performance over time.
+---
 
-Questions to ask:
-- Are measures trending upward, downward, or cyclical?
-- Are trends consistent across dimensions?
+### 03. Time Range Check
 
-### 08. Cumulative Analysis  
-**Purpose**: Track how values build up over time to understand overall progress.
+**Purpose**: Define the valid time range for analysis.
 
-Questions to ask:
-- How do totals grow over time?
-- Which dimensions contribute most to the total?
-- When does growth speed up or slow down?
+**Questions to ask**:
 
-### 09. Performance Analysis  
-**Purpose**: Identify the factors that drive performance differences.
+* What is the earliest date?
+* What is the latest date?
+* Are there missing days or months?
+* What time level should be used (day, month, year)?
 
-Questions to ask:
-- Are results better or worse than targets or expectations?
-- Which products, customers, or regions perform best and worst?
-- What factors explain these performance differences?
+---
 
-### 10. Part-to-Whole (Proportional)  
-**Purpose**: Understanding how components contribute to a whole.
+### 04. Measures Validation
 
-Questions to ask:
-- What percentage does each dimension contribute? (ex : products)
-- Are the top contributors staying the same over time?
-- Which groups contribute the biggest share of the total?
+**Purpose**: Validate that numeric values are logical.
 
-### 11. Data Segmentation  
-**Purpose**: Dividing data into meaningful groups for targeted analysis.
+**Questions to ask**:
 
-Questions to ask:
-- How can dimensions be grouped meaningfully? (New vs returning customers, High-value vs low-value products ...)
-- Do segments show distinct measure patterns?
-- Which segments are most valuable, most at risk, or require attention?
+* What are the core metrics (sales, orders, quantity)?
+* Do totals look reasonable?
+* Are there zero, negative, or missing values?
+* Are there extreme values?
 
-### 12. Reporting
-**Purpose**: Report consolidates key customer metrics and behaviors.
+---
 
-Questions to ask:
-- What should stakeholders care about?
-- What action should be taken?
+## 📊 Phase 2: Analyze Performance & Explain Results
+
+**Goal**: Understand what is happening, why it is happening, and what to do next.
+
+### 05. Compare & Rank (Magnitude + Ranking)
+
+**Purpose**: Identify best and worst performers.
+
+**Questions to ask**:
+
+* Which categories contribute the most?
+* Which contribute the least?
+* What are the Top 5 and Bottom 5?
+
+---
+
+### 06. Trend Analysis (Change Over Time)
+
+**Purpose**: Understand performance evolution.
+
+**Questions to ask**:
+
+* Is performance increasing or decreasing?
+* Are there clear peaks or drops?
+* Do trends differ across categories?
+
+---
+
+### 07. Composition & Segments
+
+**Purpose**: Understand how parts contribute to the whole.
+
+**Questions to ask**:
+
+* What percentage does each category contribute?
+* Are a few categories dominating results?
+* Can data be grouped into simple segments (high vs low value)?
+
+---
+
+### 08. Report Table Construction (Single Source of Truth)
+
+**Purpose**: Build **one consolidated table** used for all charts and dashboards.
+
+**Questions to ask**:
+
+* What dimensions are shared across all charts?
+* What metrics are reused multiple times?
+* Can every chart be rebuilt from this single table?
+* Does each row have a clear grain (e.g., one product per month)?
+
+Example:
+- Time dimension (date / month)
+- Main category (product / region / customer)
+- Optional segment
+- Core metrics (sales, orders, quantity)
+- Derived metrics (growth %, share %, rank)
+
+---
+
+### 09. Insights & Reporting
+
+**Purpose**: Turn analysis into decisions.
+
+**Questions to ask**:
+
+* What are the top 3 insights?
+* Who should care about them?
+* What action should be taken?
