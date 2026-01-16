@@ -12,17 +12,6 @@ SQL Functions Used:
 ===============================================================================
 */
 
-SELECT * FROM gold.fact_sales;
-SELECT * FROM gold.dim_products;
-SELECT * FROM gold.dim_customers;
-
-SELECT * FROM gold.fact_sales;
-SELECT * FROM gold.dim_customers;
-
----------------------------------------------
--- How do measures vary across dimensions? --
----------------------------------------------
-
 -- Total products per category
 SELECT
     category,
