@@ -1,9 +1,9 @@
 /*
 ===============================================================================
-Dimensions Exploration
+Dimensions Check
 ===============================================================================
 Purpose:
-    - Analyzing to understand distribution andgrouping
+    - Ensure categories are usable for grouping and comparison.
 	
 SQL Functions Used:
     - DISTINCT
@@ -11,14 +11,15 @@ SQL Functions Used:
 ===============================================================================
 */
 
--- What dimensions exist ?
-
+-- What are the different values in country column ?
 SELECT DISTINCT country
 FROM gold.dim_customers;
 
+-- What are the different values in gender column ?
 SELECT DISTINCT gender
 FROM gold.dim_customers;
 
+-- What are the different values in product category column ?
 SELECT DISTINCT 
     category,
     subcategory,
@@ -28,6 +29,3 @@ ORDER BY
     category,
     subcategory,
     product_name;
-
-SELECT DISTINCT product_line
-FROM gold.dim_products;
