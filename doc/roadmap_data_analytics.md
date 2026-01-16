@@ -44,7 +44,7 @@ The framework is divided into **2 phases** and **9 steps**, each answering **one
 
 **Questions to ask**:
 
-* What are the main categories (product, customer, region)?
+* What different values exist in the data? (different product, different category)?
 * How many unique values does each category have?
 * Are there missing or unclear values?
 * Are labels consistent and readable? (Dimension value e.g: [US , USA] <- Not consistent ; [United State] <- Readable)
