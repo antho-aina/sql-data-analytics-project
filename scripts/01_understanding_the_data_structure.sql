@@ -3,8 +3,7 @@
 Database Exploration
 ===============================================================================
 Purpose:
-    - To explore the structure of the database, including the list of tables and their schemas.
-    - To inspect the columns and metadata for specific tables.
+    - Understand what data exists and what one row represents.
 
 Table Used:
     - INFORMATION_SCHEMA.TABLES
@@ -12,7 +11,7 @@ Table Used:
 ===============================================================================
 */
 
--- What tables exist in the database ?
+-- What tables and schemas exist in the database ?
 SELECT
     TABLE_CATALOG,
     TABLE_SCHEMA,
@@ -32,7 +31,7 @@ INNER JOIN sys.index_columns ic ON i.object_id = ic.object_id AND i.index_id = i
 WHERE t.name = 'gold.dim_customers' AND i.is_primary_key = 1
 ORDER BY ic.key_ordinal;
 
---Which columns contain measure vs dimension data ?
+-- What is the data type of each column ?
 SELECT 
    TABLE_NAME,
    COLUMN_NAME,
