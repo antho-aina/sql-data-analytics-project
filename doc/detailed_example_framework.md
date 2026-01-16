@@ -14,7 +14,7 @@
 
 ## 🎯 Purpose
 
-This framework provides a **clear, beginner-friendly workflow** for data analysis. It removes redundancy, avoids advanced concepts too early, and guides users from raw understanding to **actionable insights**.
+This framework provides basic questions for data analysis. It removes redundancy, avoids advanced concepts too early, and guides users from raw understanding to **actionable insights**.
 
 The framework is divided into **2 phases** and **9 steps**, each answering **one simple analytical question**.
 
@@ -30,11 +30,12 @@ The framework is divided into **2 phases** and **9 steps**, each answering **one
 
 **Questions to ask**:
 
-* What tables exist?
+* What tables and schemas exist?
+* What is the data type of each column? (numeric, text, date, boolean)
 * Which table contains the main business event (sales, orders, transactions)?
 * What does one row represent?
-* Which columns are dimensions (categories)?
-* Which columns are measures (numbers)?
+* Which columns are dimensions (categories)? (e.g: categoroy, product, birthday, ID, ...)
+* Which columns are measures (numbers)? (e.g: sales, quantity, age, ...)
 
 ---
 
@@ -47,7 +48,7 @@ The framework is divided into **2 phases** and **9 steps**, each answering **one
 * What are the main categories (product, customer, region)?
 * How many unique values does each category have?
 * Are there missing or unclear values?
-* Are labels consistent and readable?
+* Are labels consistent and readable? (Dimension value e.g: [US , USA] <- Not consistent ; [United State] <- Readable)
 
 ---
 
