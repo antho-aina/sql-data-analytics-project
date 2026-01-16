@@ -32,7 +32,7 @@ The framework is divided into **2 phases** and **9 steps**, each answering **one
 * What tables and schemas exist?
 * What is the data type of each column? (numeric, text, date, boolean)
 * Which table contains the main business event (sales, orders, transactions)?
-* What does one row represent?
+* What does one row represent? (one sale, one order, one customer?)
 * Which columns are dimensions (categories)? (e.g: categoroy, product, birthday, ID, ...)
 * Which columns are measures (numbers)? (e.g: sales, quantity, age, ...)
 
