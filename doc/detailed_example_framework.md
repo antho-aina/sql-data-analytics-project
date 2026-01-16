@@ -1,14 +1,13 @@
 # 📊 Beginner-Friendly Data Analytics Framework
 
-> **Project scope notice**
-> The dataset used in this project has **already been cleaned, normalized, and quality-checked** in a separate repository.
->
-> ✔ No missing-value treatment required
-> ✔ No deduplication required
-> ✔ No normalization or standardization required
-> ✔ Data types, keys, and integrity checks already validated
->
-> 👉 This repository focuses **only on analysis, insight generation, and reporting**.
+**Project scope notice**
+The dataset used in this project has **already been cleaned, normalized, and quality-checked** in a separate repository.
+
+✔ No deduplication required
+✔ No normalization or standardization required
+✔ Data types, keys, and all data makes sense.
+
+This repository focuses **only on analysis, insight generation, and reporting**.
 
 ---
 
