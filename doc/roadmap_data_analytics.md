@@ -66,11 +66,11 @@ The framework is divided into **2 phases** and **9 steps**, each answering **one
 
 ### 04. Measures Validation
 
-**Purpose**: Validate that numeric values are logical.
+**Purpose**: Make sure the numbers make sense.
 
 **Questions to ask**:
 
-* What are the core metrics (sales, orders, quantity)?
+* What are the core metrics(the key measures you use to understand performance).(sales, orders, quantity)?
 * Do totals look reasonable?
 * Are there zero, negative, or missing values?
 * Are there extreme values?
