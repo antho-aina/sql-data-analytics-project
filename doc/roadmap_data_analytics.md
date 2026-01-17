@@ -105,7 +105,7 @@ The framework is divided into **2 phases** and **9 steps**, each answering **one
 
 ---
 
-### 07. Composition & Segments
+### 07. Contribution & Grouping
 
 **Purpose**: Understand how parts contribute to the whole.
 
