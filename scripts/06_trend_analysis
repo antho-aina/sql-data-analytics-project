@@ -1,0 +1,73 @@
+/*
+===============================================================================
+Trend Analysis (Change Over Time)
+===============================================================================
+Purpose:
+    - Understand performance evolution.
+	
+SQL Functions Used:
+    - SUM()
+    - COUNT()
+    - GROUP BY , ORDER BY ... ASC/DESC
+    - TOP
+===============================================================================
+*/
+
+-- Is performance increasing or decreasing?
+WITH month_performance AS (
+SELECT
+    DATETRUNC(MONTH, order_date) AS year_month,
+    SUM(sales_amount) AS total_sales
+FROM gold.fact_sales
+WHERE order_date IS NOT NULL
+GROUP BY DATETRUNC(MONTH, order_date)
+)
+, sales_trend AS (
+SELECT
+    year_month,
+    total_sales,
+    total_sales - LAG(total_sales, 1, total_sales) OVER (ORDER BY year_month) AS sales_difference
+FROM month_performance
+)
+SELECT 
+    year_month,
+    total_sales,
+    sales_difference,
+    SUM(sales_difference) OVER(ORDER BY year_month) AS sales_growth
+FROM sales_trend;
+
+-- Do trends differ across categories?
+SELECT
+    DATETRUNC(MONTH, order_date) AS year_month,
+    category,
+    SUM(sales_amount) AS total_sales
+FROM gold.fact_sales s
+LEFT JOIN gold.dim_products p
+    ON s.product_key = p.product_key
+WHERE order_date IS NOT NULL
+GROUP BY DATETRUNC(MONTH, order_date), category
+ORDER BY year_month, category;
+
+-- Do trends differ accross gender?
+SELECT
+    DATETRUNC(MONTH, order_date) AS year_month,
+    gender,
+    SUM(sales_amount) AS total_sales
+FROM gold.fact_sales s
+LEFT JOIN gold.dim_customers c
+    ON s.customer_key = c.customer_key
+WHERE order_date IS NOT NULL
+GROUP BY DATETRUNC(MONTH, order_date), gender
+ORDER BY year_month, gender;
+
+-- Do trends differ accross countries?
+SELECT
+    DATETRUNC(MONTH, order_date) AS year_month,
+    country,
+    SUM(sales_amount) AS total_sales
+FROM gold.fact_sales s
+LEFT JOIN gold.dim_customers c
+    ON s.customer_key = c.customer_key
+WHERE order_date IS NOT NULL
+GROUP BY DATETRUNC(MONTH, order_date), country
+ORDER BY year_month, country;
