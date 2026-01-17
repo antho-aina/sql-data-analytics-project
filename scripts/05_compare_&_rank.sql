@@ -10,7 +10,6 @@ SQL Functions Used:
     - COUNT()
     - GROUP BY , ORDER BY ... ASC/DESC
     - TOP
-	- DATETRUNC()
 ===============================================================================
 */
 
@@ -65,15 +64,6 @@ LEFT JOIN gold.dim_customers c
     ON s.customer_key = c.customer_key
 GROUP BY first_name, last_name
 ORDER BY total_orders DESC;
-
--- Which 5 month has the highest sales?
-SELECT TOP 5
-    DATETRUNC(MONTH, order_date) AS month_of_the_year,
-    SUM(sales_amount) AS total_sales
-FROM gold.fact_sales
-GROUP BY DATETRUNC(MONTH, order_date)
-HAVING DATETRUNC(MONTH, order_date) IS NOT NULL
-ORDER BY total_sales DESC;
 
 -- Which country has the highest sales?
 SELECT 
