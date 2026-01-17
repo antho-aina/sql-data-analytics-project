@@ -101,7 +101,7 @@ The framework is divided into **2 phases** and **9 steps**, each answering **one
 
 * Is performance increasing or decreasing?
 * Are there clear peaks or drops?
-* Do trends differ across categories?
+* Do trends differ across dimensions(categories)?
 
 ---
 
@@ -111,8 +111,8 @@ The framework is divided into **2 phases** and **9 steps**, each answering **one
 
 **Questions to ask**:
 
-* What percentage does each category contribute?
-* Are a few categories dominating results?
+* What percentage does each dimension(category) contribute?
+* Are a few dimensions(categories) dominating results?
 * Can data be grouped into simple segments (high vs low value)?
 
 ---
@@ -130,7 +130,7 @@ The framework is divided into **2 phases** and **9 steps**, each answering **one
 
 Example:
 - Time dimension (date / month)
-- Main category (product / region / customer)
+- Main dimension(category) (product / region / customer)
 - Optional segment
 - Core metrics (sales, orders, quantity)
 - Derived metrics (growth %, share %, rank)
