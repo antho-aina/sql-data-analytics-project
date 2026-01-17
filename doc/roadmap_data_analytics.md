@@ -126,7 +126,7 @@ The framework is divided into **2 phases** and **9 steps**, each answering **one
 * What dimensions are shared across all charts?
 * What metrics are reused multiple times?
 * Can every chart be rebuilt from this single table?
-* Does each row have a clear grain (e.g., one product per month)?
+* Does each row clearly represent one thing? (e.g., one product per month)
 
 Example:
 - Time dimension (date / month)
@@ -134,15 +134,3 @@ Example:
 - Optional segment
 - Core metrics (sales, orders, quantity)
 - Derived metrics (growth %, share %, rank)
-
----
-
-### 09. Insights & Reporting
-
-**Purpose**: Turn analysis into decisions.
-
-**Questions to ask**:
-
-* What are the top 3 insights?
-* Who should care about them?
-* What action should be taken?
