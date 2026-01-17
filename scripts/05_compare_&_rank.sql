@@ -10,6 +10,7 @@ SQL Functions Used:
     - COUNT()
     - GROUP BY , ORDER BY ... ASC/DESC
     - TOP
+	- DATETRUNC()
 ===============================================================================
 */
 
