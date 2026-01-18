@@ -1,4 +1,4 @@
-# 📊 Beginner-Friendly Data Analytics Framework
+# 📊 Data Analytics Framework
 
 **Project scope notice**
 The dataset used in this project has **already been cleaned, normalized, and quality-checked** in a separate repository.
