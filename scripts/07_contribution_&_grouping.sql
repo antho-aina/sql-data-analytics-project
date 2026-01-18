@@ -25,8 +25,7 @@ SELECT
     product_key,
     product_name,
     cost,
-    CASE WHEN cost <= 0 THEN 'n/a'
-         WHEN cost BETWEEN 1 AND 99 THEN 'Below 100'
+    CASE WHEN cost < 100 THEN 'Below 100'
          WHEN cost BETWEEN 100 AND 500 THEN '100-500'
          WHEN cost BETWEEN 500 AND 1000 THEN '500-1000'
          ELSE 'Above 1000'
@@ -37,7 +36,6 @@ SELECT
     cost_range,
     COUNT(product_key) AS total_products
 FROM cost_segment
-WHERE cost_range != 'n/a'
 GROUP BY cost_range
 ORDER BY total_products DESC;
 
@@ -118,7 +116,7 @@ SELECT
 FROM(
     SELECT
         customer_key,
-        CASE WHEN DATEDIFF(YEAR, birthdate, GETDATE()) BETWEEN 0 AND 17 THEN '0-17'
+        CASE WHEN DATEDIFF(YEAR, birthdate, GETDATE()) <= 17 THEN '0-17'
              WHEN DATEDIFF(YEAR, birthdate, GETDATE()) BETWEEN 18 AND 24 THEN '18-24'
              WHEN DATEDIFF(YEAR, birthdate, GETDATE()) BETWEEN 25 AND 34 THEN '25-34'
              WHEN DATEDIFF(YEAR, birthdate, GETDATE()) BETWEEN 35 AND 44 THEN '35-44'
