@@ -5,7 +5,7 @@ This repository contains SQL queries designed to help data analysts and BI profe
 
 
 This repository contains **SQL-based analytics projects** built on top of a curated data warehouse.  
-The source data warehouse is in a separate repository:
+The source data warehouse is in a separate repository:  
 [![GitHub Repo](https://img.shields.io/badge/Github-Repo-blue?logo=github)](https://github.com/antho-aina/sql-data-warehouse-project.git)
 
 
