@@ -4,8 +4,8 @@ Customer Report
 ===============================================================================
 Purpose:
     - This report consolidates key customer metrics and behaviors
-	- This script will create drop any view named gold.report_customers and will
-	create new one.
+	- This script drops any existing view named gold.report_customers and 
+	acreates a new one.
 
 Highlights:
     1. Gathers essential fields such as names, ages, and transaction details.
@@ -20,10 +20,6 @@ Highlights:
 	    - recency (months since last order)
 		- average order value
 		- average monthly spend
-
-Warning:
-	This script will dorp any view named gold.report_customers and replace it 
-with a new one
 ===============================================================================
 */
 
