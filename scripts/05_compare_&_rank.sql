@@ -58,7 +58,7 @@ ORDER BY total_sales DESC;
 SELECT 
     first_name,
     last_name,
-    COUNT(order_number) AS total_orders
+    COUNT(DISTINCT order_number) AS total_orders
 FROM gold.fact_sales s
 LEFT JOIN gold.dim_customers c
     ON s.customer_key = c.customer_key
